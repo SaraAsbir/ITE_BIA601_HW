@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.datasets import load_breast_cancer
+from sklearn.datasets import load_iris   # أضفنا هذا الاستيراد الجديد
 import numpy as np
 
 # 1. تحميل مجموعة بيانات سرطان الثدي
@@ -29,3 +30,23 @@ df_final = pd.concat([X_extended, y], axis=1)
 
 # 4. حفظ الملف
 df_final.to_csv("data/sample_data.csv", index=False)
+
+
+
+#اضافة بيانات من iris لاختبار الكود على مجموعة ثانية (زهور ) 
+iris = load_iris()
+X_iris = pd.DataFrame(iris.data, columns=iris.feature_names)
+y_iris = pd.Series(iris.target, name='target')
+
+# اضافة ميزات عشوائية للتنوع
+noise_features_iris = np.random.randn(X_iris.shape[0], 10)
+noise_names_iris = [f"noise_feature_{i}" for i in range(10)]
+X_iris_noise = pd.DataFrame(noise_features_iris, columns=noise_names_iris)
+X_iris_extended = pd.concat([X_iris, X_iris_noise], axis=1)
+
+df_iris_final = pd.concat([X_iris_extended, y_iris], axis=1)
+df_iris_final.to_csv("data/sample_data_iris.csv", index=False)  # حفظ باسم جديد
+
+print(f"\nتم إنشاء ملف جديد: data/sample_data_iris.csv")
+print(f"- عدد العينات: {X_iris.shape[0]}")
+print(f"- عدد الميزات بعد الإضافة: {X_iris_extended.shape[1]}")
