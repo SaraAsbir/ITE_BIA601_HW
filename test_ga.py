@@ -9,6 +9,9 @@ y = df["target"].values                 # عمود الهدف
 
 print(f"شكل البيانات: {X.shape[0]} عينة، {X.shape[1]} ميزة")
 
+# تقنية chi-sequare قبل تشغيل الخوارزمية 
+
+
 # 2. تشغيل الخوارزمية الجينية
 print("\nتشغيل الخوارزمية الجينية...")
 best_chromosome, best_fitness, history = run_genetic_algorithm(X, y, verbose=True)
@@ -26,3 +29,6 @@ print(f"- مؤشرات الميزات المختارة (أول 10): {selected_fe
 if num_selected > 10:
     print(f"  ... (و{num_selected - 10} ميزات أخرى)")
 print("="*50)
+
+# تقنية chi-sequare بعد تشغيل الخوارزمية
+
