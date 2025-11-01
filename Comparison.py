@@ -60,7 +60,7 @@ print(f"- Number of selected features: {num_selected_features} / {total_features
 print(f"- Fitness score: {Rfe_best_fitness:.4f}")
 print(f"- Indices of selected features (first 10): {selected_features_indices[:10]}")
 if num_selected_features > 10:
-    print(f"  ... (and {num_selected_features - 10} Other features"))
+    print(f"  ... (and {num_selected_features - 10} Other features)")
 print("="*50)
 
 print("Comparison between the Genetic Algorithm and the Recursive Feature Elimination : ")
