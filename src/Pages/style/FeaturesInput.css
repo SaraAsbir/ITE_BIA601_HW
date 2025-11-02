@@ -1,0 +1,91 @@
+.features-container {
+  min-height: 100vh;
+  background-color: #ffe6ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  font-family: "Cairo", sans-serif;
+}
+
+.features-title {
+  font-size: 36px;
+  color: #be185d;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.features-description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.features-input-group {
+  margin-bottom: 30px;
+}
+
+.features-input-group input {
+  padding: 10px;
+  width: 200px;
+  border: 2px solid #be185d;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.features-input-group button {
+  background-color: #be185d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.features-input-group button:hover {
+  background-color: #9d174d;
+}
+
+.features-list input {
+  margin: 8px 0;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.features-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-back,
+.btn-next {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-back {
+  background-color: #aaa;
+  color: white;
+}
+
+.btn-next {
+  background-color: #be185d;
+  color: white;
+}
+
+.btn-next:hover {
+  background-color: #9d174d;
+}
