@@ -53,6 +53,9 @@ def run_ga_rfe(X, y, feature_names, target_column, unique_classes):
     
     return {
         "best_fitness": float(best_fitness),
+        "selected_features_count": int(len(selected_features_rfe)),
+        "selected_features": selected_features_rfe,
+        "accuracy": float(accuracy_rfe),       
         "selected_features_count_ga": int(len(selected_features_ga)),
         "selected_features_ga": selected_features_ga,
         "selected_indices_ga": [int(idx) for idx in selected_indices_ga],

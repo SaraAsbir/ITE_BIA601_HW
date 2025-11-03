@@ -62,5 +62,7 @@ def run_ga_mi(X, y, feature_names, target_column, unique_classes):
         "overlap_features": overlap_features,
         "overlap_percentage_ga": f"{overlap_percentage_ga:.1f}%",
         "overlap_percentage_mi": f"{overlap_percentage_mi:.1f}%",
-        "fitness_history": [float(fitness) for fitness in history]
+        "fitness_history": [float(fitness) for fitness in history],
+        "selected_features_count": int(len(selected_features_mi)),
+        "accuracy": float(accuracy_mi),
     }
