@@ -15,10 +15,20 @@ export async function uploadAndAnalyze(endpointKey, file) {
     const formData = new FormData();
     formData.append("file", file);
 
-    const res = await fetch(`${BASE_URL}${endpoint}`, { method: "POST", body: formData });
+    let res;
+    try {
+        res = await fetch(`${BASE_URL}${endpoint}`, { 
+            method: "POST", 
+            body: formData 
+        });
+    } catch (err) {
+        throw new Error("فشل الاتصال بالخادم");
+    }
+
     if (!res.ok) {
         const text = await res.text().catch(() => "");
         throw new Error(`فشل الطلب (${res.status}): ${text || "تحقق من الخادم"}`);
     }
+
     return res.json();
 }

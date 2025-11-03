@@ -4,11 +4,7 @@ import Navbar from "./Component/Navbar";
 import Home from "./Pages/Home";
 import Results from "./Pages/Results";
 import Upload from "./Pages/Upload";
-<<<<<<< HEAD
 import Comparison from "./Pages/Comparison";
-=======
-import Comparison from "./Pages/Comarison";
->>>>>>> b9efbc35fb97b2abfd57b077cd82d9de79afcec8
 
 
 function App() {

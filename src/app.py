@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 from api.ga_pca import ga_pca_bp
 from api.ga_rfe import ga_rfe_bp
 from api.ga_chi import ga_chi_bp
@@ -6,6 +7,7 @@ from api.ga_mi import ga_mi_bp
 from api.ga_only import ga_only_bp
 
 app = Flask(__name__)
+CORS(app)
 
 app.register_blueprint(ga_pca_bp, url_prefix='/api')
 app.register_blueprint(ga_rfe_bp, url_prefix='/api')

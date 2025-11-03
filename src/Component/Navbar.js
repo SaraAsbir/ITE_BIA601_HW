@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-// src/components/Navbar.jsx
->>>>>>> b9efbc35fb97b2abfd57b077cd82d9de79afcec8
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
@@ -14,10 +10,6 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-<<<<<<< HEAD
-=======
-      {/* شعار الموقع (يعود للرئيسية عند الضغط) */}
->>>>>>> b9efbc35fb97b2abfd57b077cd82d9de79afcec8
       <div className="navbar-logo">
         <Link to="/" className="logo-link">
           <img src={logo} alt="Breast Cancer Logo" className="logo-img" />

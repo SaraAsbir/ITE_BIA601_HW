@@ -1,9 +1,5 @@
 .comparison-container {
-<<<<<<< HEAD
   margin-top: 0; 
-=======
-  margin-top: 100px;
->>>>>>> b9efbc35fb97b2abfd57b077cd82d9de79afcec8
   background-color: #ffe6ef;
   min-height: calc(100vh - 90px);
   display: flex;
@@ -14,10 +10,6 @@
   font-family: "Cairo", sans-serif;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b9efbc35fb97b2abfd57b077cd82d9de79afcec8
 .comparison-title {
   font-size: 34px;
   color: #be185d;

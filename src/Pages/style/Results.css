@@ -39,7 +39,6 @@
   color: #be185d;
 }
 
-<<<<<<< HEAD
 .results-buttons {
   display: flex;
   gap: 15px; 
@@ -47,8 +46,6 @@
   flex-wrap: wrap;
 }
 
-=======
->>>>>>> b9efbc35fb97b2abfd57b077cd82d9de79afcec8
 .results-btn {
   background-color: #be185d;
   color: white;
