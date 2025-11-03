@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style/Results.css";
@@ -34,11 +35,20 @@ function Results() {
     data.best_features ??
     data.feature_count ??
     null;
+=======
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./style/Results.css"; 
+
+function Results() {
+  const navigate = useNavigate(); // لإنشاء دالة التنقل
+>>>>>>> b9efbc35fb97b2abfd57b077cd82d9de79afcec8
 
   return (
     <div className="results-container">
       <h1 className="results-title">نتائج التحليل</h1>
 
+<<<<<<< HEAD
       {!saved ? (
         <p className="results-description">
           لا توجد نتائج محفوظة. الرجاء العودة ورفع ملف جديد.
@@ -85,6 +95,28 @@ function Results() {
           </div>
         </>
       )}
+=======
+      {/* وصف قصير للنتائج المعروضة */}
+      <p className="results-description">
+        الخوارزمية الجينية اختارت المجموعة المثلى من الخصائص الطبية
+        التي تحقق أفضل دقة للنموذج.
+      </p>
+
+      {/* صندوق يحتوي على النتائج الأساسية */}
+      <div className="results-box">
+        <p>
+          عدد الخصائص المختارة: <strong>6</strong>
+        </p>
+        <p>
+          دقة النموذج: <strong>94%</strong>
+        </p>
+      </div>
+
+      {/* زر للعودة إلى صفحة رفع البيانات */}
+      <button onClick={() => navigate("/upload")} className="results-btn">
+        العودة إلى رفع البيانات
+      </button>
+>>>>>>> b9efbc35fb97b2abfd57b077cd82d9de79afcec8
     </div>
   );
 }
