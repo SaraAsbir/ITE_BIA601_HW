@@ -1,0 +1,75 @@
+.comparison-container {
+  margin-top: 0; 
+  background-color: #ffe6ef;
+  min-height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  font-family: "Cairo", sans-serif;
+}
+
+
+.comparison-title {
+  font-size: 34px;
+  color: #be185d;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.comparison-description {
+  font-size: 18px;
+  color: #333;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.comparison-table {
+  width: 80%;
+  max-width: 600px;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table th {
+  background-color: #be185d;
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.comparison-table td {
+  padding: 12px;
+  font-size: 17px;
+  color: #444;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tr:hover {
+  background-color: #ffe4ef;
+}
+
+.comparison-btn {
+  background-color: #be185d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comparison-btn:hover {
+  background-color: #9d174d;
+}
