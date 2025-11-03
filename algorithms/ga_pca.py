@@ -42,6 +42,7 @@ def run_ga_pca(X, y, feature_names, target_column, unique_classes):
         "best_fitness": float(best_fitness),
         "selected_features_count": int(len(selected_features)),
         "selected_features": selected_features,
+        "accuracy": float(accuracy_pca),
         "selected_feature_indices": [int(idx) for idx in selected_indices],
         "accuracy_ga": float(accuracy_ga),
         "accuracy_pca": float(accuracy_pca),
