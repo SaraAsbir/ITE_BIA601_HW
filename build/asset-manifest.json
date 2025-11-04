@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ITE_BIA601_HW/static/css/main.2e597c3f.css",
+    "main.js": "/ITE_BIA601_HW/static/js/main.b153df01.js",
+    "static/js/453.3c37035c.chunk.js": "/ITE_BIA601_HW/static/js/453.3c37035c.chunk.js",
+    "static/media/Logo.png": "/ITE_BIA601_HW/static/media/Logo.786e3cbeda8d0527cd58.png",
+    "index.html": "/ITE_BIA601_HW/index.html",
+    "main.2e597c3f.css.map": "/ITE_BIA601_HW/static/css/main.2e597c3f.css.map",
+    "main.b153df01.js.map": "/ITE_BIA601_HW/static/js/main.b153df01.js.map",
+    "453.3c37035c.chunk.js.map": "/ITE_BIA601_HW/static/js/453.3c37035c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e597c3f.css",
+    "static/js/main.b153df01.js"
+  ]
+}
